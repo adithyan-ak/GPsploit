@@ -9,15 +9,14 @@ from multipleip import get_ip
 from maclookup import macLookup
 
 MainFunctions={
- 1: name,
- 2: NameUser,
- 3: carrierlookup,
- 4: GetEmail,
- 5: Web,
- 6: gps_analyzer,
- 7: reverseImg,
- 8: get_ip,
- 9: macLookup
+ 1: NameUser,
+ 2: carrierlookup,
+ 3: GetEmail,
+ 4: Web,
+ 5: gps_analyzer,
+ 6: reverseImg,
+ 7: get_ip,
+ 8: macLookup
 }
 
 
@@ -25,21 +24,20 @@ def Menu():
     Selection = 1
     while True:
         print('')
-        print("1. Name")
-        print("2. Username")
-        print("3. Phone Number")
-        print("4. Email")
-        print("5. Domain")
-        print("6. Metadata Analyzer")
-        print("7. Reverse Image Search")
-        print("8. IP Heatmap")
-        print("9. Mac Address Lookup")
-        print("10. Exit")
+        print("1. Username")
+        print("2. Phone Number")
+        print("3. Email")
+        print("4. Domain")
+        print("5. Metadata Analyzer")
+        print("6. Reverse Image Search")
+        print("7. IP Heatmap")
+        print("8. Mac Address Lookup")
+        print("9. Exit")
         print('')
         Selection = int(input(">> "))
         print('')
         if (Selection == 1):
-            MainFunctions[Selection](name)
+            MainFunctions[Selection]()
         elif (Selection == 2):
             MainFunctions[Selection]()
         elif (Selection == 3):
@@ -55,8 +53,6 @@ def Menu():
         elif Selection == 8:
             MainFunctions[Selection]()
         elif Selection == 9:
-            MainFunctions[Selection]()
-        elif Selection == 10:
             exit()
         else:
             print("Please choose an Appropriate option")

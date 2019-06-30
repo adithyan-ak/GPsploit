@@ -78,7 +78,7 @@ def ssh(host, port):
                 s.close()
                 wordlist = input("Enter Wordlist location (Press Enter for Default Wordlist) : ")
                 if wordlist == '':
-                    f = open("src/telnet.ini", "r")
+                    f = open("/Users/adithya/PycharmProjects/OSINT/webvuln/src/ssh.ini", "r")
                     f1 = f.readlines()
                 else:
                     f = open(wordlist, "r")
