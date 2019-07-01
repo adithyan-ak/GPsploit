@@ -7,6 +7,7 @@ from metadata import gps_analyzer
 from reverseimg import reverseImg
 from multipleip import get_ip
 from maclookup import macLookup
+from sentinment import GetTweet
 
 MainFunctions={
  1: NameUser,
@@ -16,7 +17,8 @@ MainFunctions={
  5: gps_analyzer,
  6: reverseImg,
  7: get_ip,
- 8: macLookup
+ 8: macLookup,
+ 9: GetTweet
 }
 
 
@@ -32,7 +34,8 @@ def Menu():
         print("6. Reverse Image Search")
         print("7. IP Heatmap")
         print("8. Mac Address Lookup")
-        print("9. Exit")
+        print("9. Sentiment Analysis")
+        print("10. Exit")
         print('')
         Selection = int(input(">> "))
         print('')
@@ -53,6 +56,8 @@ def Menu():
         elif Selection == 8:
             MainFunctions[Selection]()
         elif Selection == 9:
+            MainFunctions[Selection]()
+        elif Selection == 10:
             exit()
         else:
             print("Please choose an Appropriate option")
