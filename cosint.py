@@ -1,4 +1,4 @@
-import name, username, EmailScan
+import username, EmailScan
 from username import NameUser
 from EmailScan import GetEmail
 from phonenum import carrierlookup
