@@ -21,6 +21,7 @@
 
 ### Credits
 
+- Adithyan AK
 - Adithya Singh
 - Kanika
 - Mahir
